@@ -1,0 +1,2 @@
+body { width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 960? "960px": "auto"); }
+.nebushko { height:100%; }

@@ -1,0 +1,93 @@
+/* Reset - begin */
+html, body, div, span, p, img, object, iframe,
+h1, h2, h3, h4, h5, h6,
+blockquote, cite, pre, code,
+abbr, dfn, address,
+small, sub, sup,
+strong, em, b, i,
+dl, dt, dd, ul, ol, li,
+fieldset, legend, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, footer, section, article, aside, figure, hgroup, nav,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	border:0;
+	outline:0;
+}
+header, footer, section, article, aside, figure, hgroup, nav { display:block; }
+ul, ol { list-style:none; }
+/* Reset - end */
+
+/* Defining base styles - begin */
+html { height:101%; font-size:100.01%; background:#a4d1de url(/img/nebushko.png) repeat; }
+body { height:100%; min-width:960px; font:62.5% Cambria, Georgia, "Times New Roman", Times, serif; line-height:1.5em; color:#000; background:transparent url(/img/cloud.png) 50% 0 no-repeat; }
+
+a:link, a:visited, a:hover, a:active { text-decoration:none; }
+a:hover { color:#136695; }
+:focus { outline:0; }
+::-moz-selection { color:#000; text-shadow:none; background:#c8e2f2; }
+::selection { color:#000; text-shadow:none; background:#c8e2f2; }
+
+h2, h3, h4, h5, h6 { font-weight:normal; text-rendering:optimizeLegibility; }
+h2 { margin-bottom:10px; padding-bottom:.25em; font-size:1.63em; line-height:1em; border-bottom:1px solid #ccc; }
+
+small { font-size:.8em; }
+sub { vertical-align:sub; font-size:.75em; }
+sup { vertical-align:super; font-size:.75em; }
+strong { font-weight:bold; }
+mark { color:#000; font-style:italic; font-weight:bold; background:#ff9; }
+abbr, dfn { border-bottom:1px dotted #000; cursor:help; }
+pre, code { font-family:Consolas, monospace, sans-serif; }
+
+.orange { color:#ff9900; }
+.blue { color:#1a88c7; }
+.green { color:#8acf1d; }
+.red { color:#da3333; }
+/* Defining base styles - end */
+
+.nebushko { position:relative; width:100%; min-height:100%; }
+
+.cloud { width:960px; height:160px; margin:0 auto; }
+
+.cloud-logo { float:left; display:block; width:256px; height:43px; margin:40px 0 0 40px; text-indent:-999em; background:url(/img/antilamo-logo.png) 0 0 no-repeat; }
+.cloud-logo:hover { background-position:0 -45px; }
+
+.cloud-menu { float:right; padding:45px 20px 0 0; text-align:center; }
+.cloud-menu a { float:left; display:block; margin-right:5px; padding:10px 15px; font-size:2em; line-height:1em; text-align:center; border:1px solid transparent; cursor:pointer; }
+.cloud-menu a.last { margin-right:0; }
+.cloud-menu a.orange:hover, .cloud-menu a.orange.active { color:#fff; text-shadow:0 1px 0 #e68a00; background:#ffad33; border:1px solid #e68a00; }
+.cloud-menu a.blue:hover, .cloud-menu a.blue.active { color:#fff; text-shadow:0 1px 0 #177bb3; background:#479fd2; border:1px solid #177bb3; }
+.cloud-menu a.green:hover, .cloud-menu a.green.active { color:#fff; text-shadow:0 1px 0 #7cbb1a; background:#a1d84a; border:1px solid #7cbb1a; }
+.cloud-menu a.red:hover, .cloud-menu a.red.active { color:#fff; text-shadow:0 1px 0 #c52e2e; background:#e15b5b; border:1px solid #c52e2e; }
+
+.bred { width:960px; margin:0 auto; padding-bottom:160px; }
+.bred-content { margin-top:30px; padding:20px 25px; font-size:1.6em; line-height:1.5em; background:#fff; border:2px solid #84bfdd; }
+.bred-content a:link, .bred-content a:visited, .bred-content a:hover, .bred-content a:active { padding:0 3px 1px; color:#1a88c7; text-decoration:none; border:1px solid transparent; }
+.bred-content a:hover { color:#fff; text-shadow:0 1px 0 #177bb3; background:#479fd2; border:1px solid #177bb3; }
+.bred-content ul { margin-left:2em; list-style:disc outside; }
+.bred-content ol { margin-left:2em; list-style:decimal outside; }
+
+.ground { position:relative; width:100%; margin-top:-141px; padding-top:36px; background:url(/img/grass.png) 50% 0 repeat-x; }
+.ground-bg { width:100%; height:100px; background:#262626 url(/img/ground.png) repeat; border-top:5px solid #8acf1d; }
+.ground-content { width:960px; height:100px; margin:0 auto; }
+
+.ground-logo { float:left; display:block; width:142px; height:23px; margin:30px 0 0 25px; text-indent:-999em; background:url(/img/antilamo-logo.png) 0 -90px no-repeat; }
+.ground-logo:hover { background-position:0 -115px; }
+
+.ground-menu { float:left; padding:31px 0 0 30px; }
+.ground-menu a { float:left; display:block; padding:5px 15px; color:#bbb; font:1.6em/1em "PT Sans Caption", "PT Sans", "Droid Sans", Calibri, "Trebuchet MS", Arial, Verdana, Geneva, Helvetica, sans-serif; text-transform:uppercase; border-right:1px solid #666; }
+.ground-menu a.last { border-right:0; }
+.ground-menu a.orange:hover { color:#ff9900; background:transparent; }
+.ground-menu a.blue:hover { color:#1a88c7; background:transparent; }
+.ground-menu a.green:hover { color:#8acf1d; background:transparent; }
+.ground-menu a.orange.active { color:#fff; background:#ff9900; }
+.ground-menu a.blue.active { color:#fff; background:#1a88c7; }
+.ground-menu a.green.active { color:#fff; background:#8acf1d; }
+
+.ground-mutota { float:right; padding:12px 15px 0 10px; color:#999; font-size:1.5em; line-height:1em; letter-spacing:1px; text-align:center; }
+.ground-mutota div { width:125px; height:36px; margin-bottom:2px; text-indent:-999em; background:url(/img/mutota.png) 0 0 no-repeat; }
+.ground-mutota div:hover { background-position:50% 100%; }
