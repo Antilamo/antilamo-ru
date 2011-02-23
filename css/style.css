@@ -57,7 +57,7 @@ pre, code { font-family:Consolas, monospace, sans-serif; }
 .cloud-logo:hover { background-position:0 -45px; }
 
 .cloud-menu { float:right; padding:45px 20px 0 0; text-align:center; }
-.cloud-menu a { float:left; display:block; margin-right:5px; padding:10px 15px; font-size:2em; line-height:1em; text-align:center; border:1px solid transparent; cursor:pointer; }
+.cloud-menu a { float:left; display:block; margin-right:5px; padding:10px 15px; font-size:1.8em; line-height:1em; text-align:center; border:1px solid transparent; cursor:pointer; }
 .cloud-menu a.last { margin-right:0; }
 .cloud-menu a.orange:hover, .cloud-menu a.orange.active { color:#fff; text-shadow:0 1px 0 #e68a00; background:#ffad33; border:1px solid #e68a00; }
 .cloud-menu a.blue:hover, .cloud-menu a.blue.active { color:#fff; text-shadow:0 1px 0 #177bb3; background:#479fd2; border:1px solid #177bb3; }
@@ -89,5 +89,5 @@ pre, code { font-family:Consolas, monospace, sans-serif; }
 .ground-menu a.green.active { color:#fff; background:#8acf1d; }
 
 .ground-mutota { float:right; padding:12px 15px 0 10px; color:#999; font-size:1.5em; line-height:1em; letter-spacing:1px; text-align:center; }
-.ground-mutota div { width:125px; height:36px; margin-bottom:2px; text-indent:-999em; background:url(/img/mutota.png) 0 0 no-repeat; }
-.ground-mutota div:hover { background-position:50% 100%; }
+.ground-mutota .slogan { width:125px; height:36px; margin-bottom:2px; text-indent:-999em; background:url(/img/mutota.png) 0 0 no-repeat; }
+.ground-mutota .slogan:hover { background-position:50% 100%; }
