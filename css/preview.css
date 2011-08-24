@@ -1,0 +1,35 @@
+html, body, div, span, p, img,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:baseline;
+}
+
+body { background:#87b7e6 url(/img/bg/h12.png) repeat; }
+body.h0 { background-image:url(/img/bg/h0.png); }
+body.h1 { background-image:url(/img/bg/h1.png); }
+body.h2 { background-image:url(/img/bg/h1.png); }
+body.h3 { background-image:url(/img/bg/h1.png); }
+body.h4 { background-image:url(/img/bg/h4.png); }
+body.h5 { background-image:url(/img/bg/h5.png); }
+body.h6 { background-image:url(/img/bg/h6.png); }
+body.h7 { background-image:url(/img/bg/h7.png); }
+body.h8 { background-image:url(/img/bg/h8.png); }
+body.h9 { background-image:url(/img/bg/h9.png); }
+body.h10 { background-image:url(/img/bg/h10.png); }
+body.h11 { background-image:url(/img/bg/h11.png); }
+body.h12 { background-image:url(/img/bg/h12.png); }
+body.h13 { background-image:url(/img/bg/h13.png); }
+body.h14 { background-image:url(/img/bg/h14.png); }
+body.h15 { background-image:url(/img/bg/h15.png); }
+body.h16 { background-image:url(/img/bg/h16.png); }
+body.h17 { background-image:url(/img/bg/h17.png); }
+body.h18 { background-image:url(/img/bg/h18.png); }
+body.h19 { background-image:url(/img/bg/h19.png); }
+body.h20 { background-image:url(/img/bg/h20.png); }
+body.h21 { background-image:url(/img/bg/h21.png); }
+body.h22 { background-image:url(/img/bg/h22.png); }
+body.h23 { background-image:url(/img/bg/h23.png); }
+
+.cloud { display:block; margin:0 auto; }
