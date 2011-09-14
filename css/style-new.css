@@ -1,0 +1,537 @@
+/**
+* Reset
+*/
+/* line 14, style-new.scss */
+html, body, div, span, p, img, object, iframe,
+h1, h2, h3, h4, h5, h6,
+blockquote, cite, pre, code,
+abbr, dfn, address,
+small, sub, sup,
+strong, em, b, i,
+dl, dt, dd, ul, ol, li,
+fieldset, legend, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, footer, section, article, aside, figure, hgroup, nav,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 22, style-new.scss */
+header, footer, section, article, aside, figure, hgroup, nav {
+  display: block;
+}
+
+/* line 23, style-new.scss */
+ul, ol {
+  list-style: none;
+}
+
+/**
+* Base styles
+*/
+/* line 29, style-new.scss */
+html {
+  height: 100%;
+  font-size: 100.01%;
+  background: #87b7e6 url(/img/nebushko.png) repeat;
+  overflow-y: scroll;
+}
+
+/* line 35, style-new.scss */
+body {
+  height: 100%;
+  min-width: 960px;
+  font: 62.5%/1.5 Cambria, Georgia, "Times New Roman", Times, serif;
+  color: #000;
+  background: transparent url(/img/cloud.png) 50% 0 no-repeat;
+}
+
+/* line 43, style-new.scss */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* line 44, style-new.scss */
+a:hover {
+  color: #136695;
+}
+
+/* line 46, style-new.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 48, style-new.scss */
+::-moz-selection {
+  color: #000;
+  text-shadow: none;
+  background: #c8e2f2;
+}
+
+/* line 49, style-new.scss */
+::selection {
+  color: #000;
+  text-shadow: none;
+  background: #c8e2f2;
+}
+
+/* line 51, style-new.scss */
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* line 53, style-new.scss */
+small {
+  font-size: .8em;
+}
+
+/* line 54, style-new.scss */
+sub {
+  vertical-align: sub;
+  font-size: .75em;
+}
+
+/* line 55, style-new.scss */
+sup {
+  vertical-align: super;
+  font-size: .75em;
+}
+
+/* line 56, style-new.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 57, style-new.scss */
+abbr, dfn {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* line 58, style-new.scss */
+pre, code {
+  font-family: Consolas, monospace, sans-serif;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url("/fonts/Museo300-Regular-webfont.eot");
+  src: url("/fonts/Museo300-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Museo300-Regular-webfont.woff") format("woff"), url("/fonts/Museo300-Regular-webfont.ttf") format("truetype"), url("/fonts/Museo300-Regular-webfont.svg#svgFontName") format("svg");
+}
+
+/* line 69, style-new.scss */
+.clearfix:before, .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 76, style-new.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 77, style-new.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 79, style-new.scss */
+.orange {
+  color: #f90;
+}
+
+/* line 80, style-new.scss */
+.blue {
+  color: #1a88c7;
+}
+
+/* line 81, style-new.scss */
+.green {
+  color: #8acf1d;
+}
+
+/* line 82, style-new.scss */
+.red {
+  color: #da3333;
+}
+
+/* line 83, style-new.scss */
+.black {
+  color: #000;
+}
+
+/* line 84, style-new.scss */
+.nw {
+  white-space: nowrap;
+}
+
+/* wrapper for sticked footer */
+/* line 87, style-new.scss */
+.sky {
+  width: 100%;
+  min-height: 100%;
+}
+
+/**
+* Header
+*/
+/* line 96, style-new.scss */
+.cloud {
+  width: 96em;
+  height: 16em;
+  margin: 0 auto;
+}
+
+/* line 101, style-new.scss */
+.cloud-logo-wrap {
+  float: left;
+  margin: 3.3em 0 0 4em;
+}
+
+/* line 105, style-new.scss */
+.cloud-logo {
+  font: 6em/1 Museo;
+  opacity: 0.7;
+  -webkit-transition: opacity 150ms linear 0s;
+  -moz-transition: opacity 150ms linear 0s;
+  -o-transition: opacity 150ms linear 0s;
+  transition: opacity 150ms linear 0s;
+}
+
+/* line 113, style-new.scss */
+.cloud-logo:hover {
+  opacity: 1;
+}
+
+/* line 115, style-new.scss */
+.cloud-menu {
+  float: right;
+  padding: 4.5em 1.5em 0 0;
+}
+
+/* line 119, style-new.scss */
+.cloud-menu .menu-item {
+  float: left;
+  display: block;
+  margin-right: .28em;
+  padding: .56em .83em;
+  font-size: 1.8em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  background: #fff;
+  border: 1px solid #fff;
+  -webkit-border-radius: .28em;
+  -moz-border-radius: .28em;
+  border-radius: .28em;
+  cursor: pointer;
+}
+
+/* line 135, style-new.scss */
+.cloud-menu .menu-item:hover, .cloud-menu .menu-item.active {
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 1px 0 1px rgba(255, 255, 255, 0.4), inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 1px 0 1px rgba(255, 255, 255, 0.4), inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 1px 0 1px rgba(255, 255, 255, 0.4), inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* line 188, style-new.scss */
+.cloud-menu .menu-item:hover {
+  -webkit-transition-property: color, background-color, background-image, border-color, text-shadow;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-property: color, background-color, background-image, border-color, text-shadow;
+  -moz-transition-duration: 150ms;
+  -o-transition-property: color, background-color, background-image, border-color, text-shadow;
+  -o-transition-duration: 150ms;
+  transition-property: color, background-color, background-image, border-color, text-shadow;
+  transition-duration: 150ms;
+}
+
+/* line 198, style-new.scss */
+.cloud-menu .menu-item:active {
+  position: relative;
+  top: 1px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 1px 0 2px rgba(255, 255, 255, 0.4), inset -1px 0 2px rgba(255, 255, 255, 0.4), inset 0 -1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 1px 0 2px rgba(255, 255, 255, 0.4), inset -1px 0 2px rgba(255, 255, 255, 0.4), inset 0 -1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 1px 0 2px rgba(255, 255, 255, 0.4), inset -1px 0 2px rgba(255, 255, 255, 0.4), inset 0 -1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* line 217, style-new.scss */
+.cloud-menu .menu-item.orange:hover, .cloud-menu .menu-item.orange.active {
+  background-color: #ffad33;
+}
+
+/* line 218, style-new.scss */
+.cloud-menu .menu-item.blue:hover, .cloud-menu .menu-item.blue.active {
+  background-color: #479fd2;
+}
+
+/* line 219, style-new.scss */
+.cloud-menu .menu-item.green:hover, .cloud-menu .menu-item.green.active {
+  background-color: #a1d84a;
+}
+
+/* line 220, style-new.scss */
+.cloud-menu .menu-item.red:hover, .cloud-menu .menu-item.red.active {
+  background-color: #e15b5b;
+}
+
+/**
+* Content
+*/
+/* line 226, style-new.scss */
+.bred {
+  width: 96em;
+  margin: 0 auto;
+  padding-bottom: 16em;
+}
+
+/* line 232, style-new.scss */
+.block {
+  margin: 3em 5px 0;
+  padding: 2em 2.5em;
+  background: #fff;
+  border: 3px solid #92bbdd;
+  -webkit-box-shadow: 0 1px 7px #84bfdd;
+  -moz-box-shadow: 0 1px 7px #84bfdd;
+  box-shadow: 0 1px 7px #84bfdd;
+}
+
+/* line 242, style-new.scss */
+.block-title {
+  padding-bottom: .27em;
+  font-size: 2.6em;
+  line-height: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 249, style-new.scss */
+.block a:link, .block a:visited, .block a:hover, .block a:active {
+  color: #1a88c7;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+/* line 254, style-new.scss */
+.block a:hover {
+  color: #fff;
+  text-shadow: 0 1px 0 #177bb3;
+  background: #479fd2;
+  border: 1px solid #177bb3;
+}
+
+/* line 261, style-new.scss */
+.block p, .block ul, .block ol {
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+
+/* line 265, style-new.scss */
+.block p {
+  margin-top: .63em;
+}
+
+/* line 266, style-new.scss */
+.block ul {
+  margin: .63em 0 0 2.5em;
+  list-style: disc outside;
+}
+
+/* line 270, style-new.scss */
+.block ol {
+  margin: .63em 0 0 2.5em;
+  list-style: decimal outside;
+}
+
+/**
+* Footer
+*/
+/* line 279, style-new.scss */
+.ground {
+  width: 100%;
+  height: 10em;
+  margin-top: -10.5em;
+  font-family: "PT Sans Caption", "PT Sans", "Droid Sans", Calibri, "Trebuchet MS", Arial, Verdana, Geneva, Helvetica, sans-serif;
+  text-shadow: 0 2px 3px #222222, 0 -1px 1px #222222;
+  background: #262626 url(/img/ground.png) repeat;
+  border-top: .5em solid #8acf1d;
+  -webkit-box-shadow: inset 0 2em 2em -2em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2em 2em -2em rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2em 2em -2em rgba(0, 0, 0, 0.4);
+}
+
+/* line 293, style-new.scss */
+.ground-grass {
+  width: 100%;
+  height: 3.5em;
+  margin-top: -4em;
+  background: url(/img/grass.png) 0 100% repeat-x;
+}
+
+/* line 299, style-new.scss */
+.ground-content {
+  width: 96em;
+  height: 10em;
+  margin: 0 auto;
+}
+
+/* line 305, style-new.scss */
+.ground-logo-wrap {
+  float: left;
+  margin: 3.6em 0 0 2.5em;
+}
+
+/* line 309, style-new.scss */
+.ground-logo:link, .ground-logo:visited, .ground-logo:hover, .ground-logo:active {
+  color: #848484;
+  font: 3.2em/1 Museo;
+  opacity: 0.7;
+  -webkit-transition: opacity 150ms linear 0s;
+  -moz-transition: opacity 150ms linear 0s;
+  -o-transition: opacity 150ms linear 0s;
+  transition: opacity 150ms linear 0s;
+}
+
+/* line 318, style-new.scss */
+.ground-logo:hover {
+  opacity: 1;
+}
+
+/* line 320, style-new.scss */
+.ground-menu {
+  float: left;
+  padding: 4.1em 0 0 3em;
+}
+
+/* line 324, style-new.scss */
+.ground-menu .menu-item {
+  float: left;
+  display: block;
+  padding: .31em .94em;
+  color: #bbb;
+  font: 1.6em/1 "PT Sans Caption", "PT Sans", "Droid Sans", Calibri, "Trebuchet MS", Arial, Verdana, Geneva, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border-left: 1px solid #666;
+  border-right: 1px solid #333;
+}
+
+/* line 334, style-new.scss */
+.ground-menu .menu-item.orange {
+  border-left: 0;
+}
+
+/* line 335, style-new.scss */
+.ground-menu .menu-item.green {
+  border-right: 0;
+}
+
+/* line 336, style-new.scss */
+.ground-menu .menu-item.orange:hover {
+  color: #ffad33;
+}
+
+/* line 337, style-new.scss */
+.ground-menu .menu-item.blue:hover {
+  color: #479fd2;
+}
+
+/* line 338, style-new.scss */
+.ground-menu .menu-item.green:hover {
+  color: #a1d84a;
+}
+
+/* line 340, style-new.scss */
+.ground-mutota {
+  float: right;
+  margin: 1em 1.5em 0 1em;
+  color: #999;
+  text-align: center;
+}
+
+/* line 346, style-new.scss */
+.ground-mutota .slogan {
+  margin-bottom: -0.67em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* line 352, style-new.scss */
+.ground-mutota .timepiece {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 356, style-new.scss */
+.ground-mutota .past {
+  margin: 0 -1em 0 0.1em;
+}
+
+/* line 357, style-new.scss */
+.ground-mutota .future {
+  margin-left: -1.1em;
+}
+
+/* line 359, style-new.scss */
+.ground-mutota .hider {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear 100ms, opacity 100ms linear 0s;
+  -moz-transition: visibility 0s linear 100ms, opacity 100ms linear 0s;
+  -o-transition: visibility 0s linear 100ms, opacity 100ms linear 0s;
+  transition: visibility 0s linear 100ms, opacity 100ms linear 0s;
+}
+
+/* line 367, style-new.scss */
+.ground-mutota:hover .hider {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 371, style-new.scss */
+.ground-mutota:hover .past .hider {
+  -webkit-transition: opacity 100ms linear 0s;
+  -moz-transition: opacity 100ms linear 0s;
+  -o-transition: opacity 100ms linear 0s;
+  transition: opacity 100ms linear 0s;
+}
+
+/* line 377, style-new.scss */
+.ground-mutota:hover .present .hider {
+  -webkit-transition: opacity 100ms linear 500ms;
+  -moz-transition: opacity 100ms linear 500ms;
+  -o-transition: opacity 100ms linear 500ms;
+  transition: opacity 100ms linear 500ms;
+}
+
+/* line 383, style-new.scss */
+.ground-mutota:hover .future .hider {
+  -webkit-transition: opacity 100ms linear 1s;
+  -moz-transition: opacity 100ms linear 1s;
+  -o-transition: opacity 100ms linear 1s;
+  transition: opacity 100ms linear 1s;
+}
+
+/* line 390, style-new.scss */
+.ground-mutota .asterisk {
+  font-size: 1.6em;
+}
+
+/* line 392, style-new.scss */
+.ground-mutota .copy {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}

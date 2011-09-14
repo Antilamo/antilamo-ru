@@ -1,0 +1,395 @@
+/**
+* Reset
+*/
+html, body, div, span, p, img, object, iframe,
+h1, h2, h3, h4, h5, h6,
+blockquote, cite, pre, code,
+abbr, dfn, address,
+small, sub, sup,
+strong, em, b, i,
+dl, dt, dd, ul, ol, li,
+fieldset, legend, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, footer, section, article, aside, figure, hgroup, nav,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+header, footer, section, article, aside, figure, hgroup, nav { display:block; }
+ul, ol { list-style:none; }
+
+
+/**
+* Base styles
+*/
+html {
+	height:100%;
+	font-size:100.01%;
+	background:#87b7e6 url(/img/nebushko.png) repeat;
+	overflow-y:scroll;
+}
+body {
+	height:100%;
+	min-width:960px;
+	font:62.5%/1.5 Cambria, Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	background:transparent url(/img/cloud.png) 50% 0 no-repeat;
+}
+
+a:link, a:visited, a:hover, a:active { text-decoration:none; }
+a:hover { color:#136695; }
+
+:focus { outline:0; }
+
+::-moz-selection { color:#000; text-shadow:none; background:#c8e2f2; }
+::selection { color:#000; text-shadow:none; background:#c8e2f2; }
+
+h2, h3, h4, h5, h6 { font-weight:normal; }
+
+small { font-size:.8em; }
+sub { vertical-align:sub; font-size:.75em; }
+sup { vertical-align:super; font-size:.75em; }
+strong { font-weight:bold; }
+abbr, dfn { border-bottom:1px dotted #000; cursor:help; }
+pre, code { font-family:Consolas, monospace, sans-serif; }
+
+@font-face {
+	font-family:'Museo';
+	src:url('/fonts/Museo300-Regular-webfont.eot');
+	src:url('/fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Museo300-Regular-webfont.woff') format('woff'),
+		url('/fonts/Museo300-Regular-webfont.ttf')  format('truetype'),
+		url('/fonts/Museo300-Regular-webfont.svg#svgFontName') format('svg');
+	}
+
+.clearfix:before, .clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
+
+.orange { color:#f90; }
+.blue { color:#1a88c7; }
+.green { color:#8acf1d; }
+.red { color:#da3333; }
+.black { color:#000; }
+.nw { white-space:nowrap; }
+
+/* wrapper for sticked footer */
+.sky {
+	width:100%;
+	min-height:100%;
+}
+
+
+/**
+* Header
+*/
+.cloud {
+	width:96em;
+	height:16em;
+	margin:0 auto;
+}
+.cloud-logo-wrap {
+	float:left;
+	margin:3.3em 0 0 4em;
+}
+.cloud-logo {
+	font:6em/1 Museo;
+	opacity:0.7;
+	-webkit-transition:opacity 150ms linear 0s;
+	-moz-transition:opacity 150ms linear 0s;
+	-o-transition:opacity 150ms linear 0s;
+	transition:opacity 150ms linear 0s;
+}
+.cloud-logo:hover { opacity:1; }
+
+.cloud-menu {
+	float:right;
+	padding:4.5em 1.5em 0 0;
+}
+.cloud-menu .menu-item {
+	float:left;
+	display:block;
+	margin-right:.28em;
+	padding:.56em .83em;
+	font-size:1.8em;
+	line-height:1;
+	text-align:center;
+	white-space:nowrap;
+	background:#fff;
+	border:1px solid #fff;
+	-webkit-border-radius:.28em;
+	-moz-border-radius:.28em;
+	border-radius:.28em;
+	cursor:pointer;
+}
+.cloud-menu .menu-item:hover, .cloud-menu .menu-item.active {
+	color:#fff;
+	text-shadow:
+		0 2px 3px rgba(0, 0, 0, 0.3),
+		0 -1px 1px rgba(0, 0, 0, 0.3);
+	background-image:-webkit-linear-gradient(
+		top,
+		rgba(255, 255, 255, 0.2) 0%,
+		rgba(255, 255, 255, 0.1) 50%,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+	background-image:-moz-linear-gradient(
+		top,
+		rgba(255, 255, 255, 0.2) 0%,
+		rgba(255, 255, 255, 0.1) 50%,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+	background-image:-o-linear-gradient(
+		top,
+		rgba(255, 255, 255, 0.2) 0%,
+		rgba(255, 255, 255, 0.1) 50%,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+	background-image:linear-gradient(
+		top,
+		rgba(255, 255, 255, 0.2) 0%,
+		rgba(255, 255, 255, 0.1) 50%,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+	border:1px solid rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:
+		0 1px 2px rgba(0, 0, 0, 0.5),
+		inset 1px 0 1px rgba(255, 255, 255, 0.4),
+		inset -1px 0 1px rgba(255, 255, 255, 0.4),
+		inset 0 1px 1px rgba(255, 255, 255, 0.5),
+		inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow:
+		0 1px 2px rgba(0, 0, 0, 0.5),
+		inset 1px 0 1px rgba(255, 255, 255, 0.4),
+		inset -1px 0 1px rgba(255, 255, 255, 0.4),
+		inset 0 1px 1px rgba(255, 255, 255, 0.5),
+		inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+	box-shadow:
+		0 1px 2px rgba(0, 0, 0, 0.5),
+		inset 1px 0 1px rgba(255, 255, 255, 0.4),
+		inset -1px 0 1px rgba(255, 255, 255, 0.4),
+		inset 0 1px 1px rgba(255, 255, 255, 0.5),
+		inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+.cloud-menu .menu-item:hover {
+	-webkit-transition-property:color, background-color, background-image, border-color, text-shadow;
+	-webkit-transition-duration:150ms;
+	-moz-transition-property:color, background-color, background-image, border-color, text-shadow;
+	-moz-transition-duration:150ms;
+	-o-transition-property:color, background-color, background-image, border-color, text-shadow;
+	-o-transition-duration:150ms;
+	transition-property:color, background-color, background-image, border-color, text-shadow;
+	transition-duration:150ms;
+}
+.cloud-menu .menu-item:active {
+	position:relative;
+	top:1px;
+	-webkit-box-shadow:
+		inset 0 1px 1px rgba(0, 0, 0, 0.5),
+		inset 1px 0 2px rgba(255, 255, 255, 0.4),
+		inset -1px 0 2px rgba(255, 255, 255, 0.4),
+		inset 0 -1px 2px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow:
+		inset 0 1px 1px rgba(0, 0, 0, 0.5),
+		inset 1px 0 2px rgba(255, 255, 255, 0.4),
+		inset -1px 0 2px rgba(255, 255, 255, 0.4),
+		inset 0 -1px 2px rgba(255, 255, 255, 0.2);
+	box-shadow:
+		inset 0 1px 1px rgba(0, 0, 0, 0.5),
+		inset 1px 0 2px rgba(255, 255, 255, 0.4),
+		inset -1px 0 2px rgba(255, 255, 255, 0.4),
+		inset 0 -1px 2px rgba(255, 255, 255, 0.2);
+}
+.cloud-menu .menu-item.orange:hover, .cloud-menu .menu-item.orange.active { background-color:#ffad33; }
+.cloud-menu .menu-item.blue:hover, .cloud-menu .menu-item.blue.active { background-color:#479fd2; }
+.cloud-menu .menu-item.green:hover, .cloud-menu .menu-item.green.active { background-color:#a1d84a; }
+.cloud-menu .menu-item.red:hover, .cloud-menu .menu-item.red.active { background-color:#e15b5b; }
+
+
+/**
+* Content
+*/
+.bred {
+	width:96em;
+	margin:0 auto;
+	padding-bottom:16em;
+}
+
+.block {
+	margin:3em 5px 0;
+	padding:2em 2.5em;
+	background:#fff;
+	border:3px solid #92bbdd;
+	-webkit-box-shadow:0 1px 7px #84bfdd;
+	-moz-box-shadow:0 1px 7px #84bfdd;
+	box-shadow:0 1px 7px #84bfdd;
+}
+
+.block-title {
+	padding-bottom:.27em;
+	font-size:2.6em;
+	line-height:1;
+	border-bottom:1px solid #ccc;
+}
+
+.block a:link, .block a:visited, .block a:hover, .block a:active {
+	color:#1a88c7;
+	text-decoration:none;
+	border:1px solid transparent;
+}
+.block a:hover {
+	color:#fff;
+	text-shadow:0 1px 0 #177bb3;
+	background:#479fd2;
+	border:1px solid #177bb3;
+}
+
+.block p, .block ul, .block ol {
+	font-size:1.6em;
+	line-height:1.5;
+}
+.block p { margin-top:.63em; }
+.block ul {
+	margin:.63em 0 0 2.5em;
+	list-style:disc outside;
+}
+.block ol {
+	margin:.63em 0 0 2.5em;
+	list-style:decimal outside;
+}
+
+
+/**
+* Footer
+*/
+.ground {
+	width:100%;
+	height:10em;
+	margin-top:-10.5em;
+	font-family:"PT Sans Caption", "PT Sans", "Droid Sans", Calibri, "Trebuchet MS", Arial, Verdana, Geneva, Helvetica, sans-serif;
+	text-shadow:
+		0 2px 3px #222,
+		0 -1px 1px #222;
+	background:#262626 url(/img/ground.png) repeat;
+	border-top:.5em solid #8acf1d;
+	-webkit-box-shadow:inset 0 2em 2em -2em rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:inset 0 2em 2em -2em rgba(0, 0, 0, 0.4);
+	box-shadow:inset 0 2em 2em -2em rgba(0, 0, 0, 0.4);
+}
+.ground-grass {
+	width:100%;
+	height:3.5em;
+	margin-top:-4em;
+	background:url(/img/grass.png) 0 100% repeat-x;
+}
+.ground-content {
+	width:96em;
+	height:10em;
+	margin:0 auto;
+}
+
+.ground-logo-wrap {
+	float:left;
+	margin:3.6em 0 0 2.5em;
+}
+.ground-logo:link, .ground-logo:visited, .ground-logo:hover, .ground-logo:active {
+	color:#848484;
+	font:3.2em/1 Museo;
+	opacity:0.7;
+	-webkit-transition:opacity 150ms linear 0s;
+	-moz-transition:opacity 150ms linear 0s;
+	-o-transition:opacity 150ms linear 0s;
+	transition:opacity 150ms linear 0s;
+}
+.ground-logo:hover { opacity:1; }
+
+.ground-menu {
+	float:left;
+	padding:4.1em 0 0 3em;
+}
+.ground-menu .menu-item {
+	float:left;
+	display:block;
+	padding:.31em .94em;
+	color:#bbb;
+	font:1.6em/1 "PT Sans Caption", "PT Sans", "Droid Sans", Calibri, "Trebuchet MS", Arial, Verdana, Geneva, Helvetica, sans-serif;
+	text-transform:uppercase;
+	border-left:1px solid #666;
+	border-right:1px solid #333;
+}
+.ground-menu .menu-item.orange { border-left:0; }
+.ground-menu .menu-item.green { border-right:0; }
+.ground-menu .menu-item.orange:hover { color:#ffad33; }
+.ground-menu .menu-item.blue:hover { color:#479fd2; }
+.ground-menu .menu-item.green:hover { color:#a1d84a; }
+
+.ground-mutota {
+	float:right;
+	margin:1em 1.5em 0 1em;
+	color:#999;
+	text-align:center;
+}
+.ground-mutota .slogan {
+	margin-bottom:-.67em;
+	font-size:1.5em;
+	line-height:1;
+}
+
+.ground-mutota .timepiece {
+	display:inline-block;
+	vertical-align:top;
+}
+.ground-mutota .past { margin:0 -1em 0 .1em; }
+.ground-mutota .future { margin-left:-1.1em; }
+
+.ground-mutota .hider {
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition:visibility 0s linear 100ms, opacity 100ms linear 0s;
+	-moz-transition:visibility 0s linear 100ms, opacity 100ms linear 0s;
+	-o-transition:visibility 0s linear 100ms, opacity 100ms linear 0s;
+	transition:visibility 0s linear 100ms, opacity 100ms linear 0s;
+}
+.ground-mutota:hover .hider {
+	visibility:visible;
+	opacity:1;
+}
+.ground-mutota:hover .past .hider {
+	-webkit-transition:opacity 100ms linear 0s;
+	-moz-transition:opacity 100ms linear 0s;
+	-o-transition:opacity 100ms linear 0s;
+	transition:opacity 100ms linear 0s;
+}
+.ground-mutota:hover .present .hider {
+	-webkit-transition:opacity 100ms linear 500ms;
+	-moz-transition:opacity 100ms linear 500ms;
+	-o-transition:opacity 100ms linear 500ms;
+	transition:opacity 100ms linear 500ms;
+}
+.ground-mutota:hover .future .hider {
+	-webkit-transition:opacity 100ms linear 1s;
+	-moz-transition:opacity 100ms linear 1s;
+	-o-transition:opacity 100ms linear 1s;
+	transition:opacity 100ms linear 1s;
+}
+
+.ground-mutota .asterisk { font-size:1.6em; }
+
+.ground-mutota .copy {
+	font-size:1.5em;
+	letter-spacing:1px;
+}
